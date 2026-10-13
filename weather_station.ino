@@ -1,16 +1,3 @@
-// Weather station + bubble level
-// Parts: UNO R4 WiFi, DHT11 3-pin module, 0.96" OLED (SSD1306), push button,
-//        GY-6500 (MPU-9250/6500) motion board
-// Optional: BMP180 barometer (detected automatically if ever added)
-// Lines marked "CHANGED" or "NEW" differ from the original sketch.
-//
-// Button cycles screens:
-//   0 = summary   1 = pressure graph (only if BMP180 present)
-//   2 = temp graph   3 = humidity graph   4 = bubble level (NEW)
-//
-// Level screen: keep the breadboard flat on the desk when you power it on.
-// That starting position is treated as "level".
-
 #include <SPI.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
